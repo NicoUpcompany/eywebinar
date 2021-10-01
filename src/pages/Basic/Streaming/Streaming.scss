@@ -455,6 +455,11 @@
 			display: block;
 			// border: 1px solid $border-grey-light;
 
+			.transmission{
+				width: 100%;
+				padding: 30px;
+			}
+
 			iframe {
 				float: left;
 				width: 100%;
@@ -467,7 +472,7 @@
 			.claps-container {
 				position: absolute;
 				z-index: 100;
-				left: 15%;
+				left: 5%;
 				bottom: 0;
 				width: 100px;
 				height: auto;
@@ -487,7 +492,7 @@
 			}
 			.heart-container {
 				position: absolute;
-				left: 25%;
+				left: 15%;
 				bottom: 0;
 				width: 100px;
 				height: auto;
@@ -508,7 +513,7 @@
 			}
 			.smile-container {
 				position: absolute;
-				left: 35%;
+				left: 25%;
 				bottom: 0;
 				width: 100px;
 				height: auto;
@@ -603,10 +608,6 @@
 			position: relative;
 
 			/* transition-duration: 1s; */
-		}
-
-		.css-1fwrecc{
-			background-color: red !important;
 		}
 
 		.row {
