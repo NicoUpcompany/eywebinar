@@ -91,6 +91,11 @@ const Streaming = () => {
 					fullName: decodedToken.fullName,
 				};
 				updateStreamTimeApi(auxToken, data);
+				console.log('holasdf')
+
+				setTimeout(() => {
+					$(".css-1z10v04:first-child").trigger('click');
+				}, 1000);
 
 				if (!isSafari && !isMobileSafari) {
 					const UID = decodedToken.id;
