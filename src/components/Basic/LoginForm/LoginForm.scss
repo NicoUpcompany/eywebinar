@@ -1,0 +1,84 @@
+@import "../../../scss/index.scss";
+
+.formLogin {
+	.campo {
+		float: left;
+		width: 100%;
+		position: relative;
+
+		label {
+			position: absolute;
+			transition: 0.3s all ease;
+			top: -18px;
+			left: 7px;
+			font-size: 12px;
+			padding: 2px 4px;
+			font-family: $font-bold;
+			background: transparent;
+			color: $font-subtitle !important;
+			opacity: 1;
+		}
+		
+		input {
+			border: 2px solid #bb8c36;
+			border-radius: 4px;
+			float: left;
+			width: 100%;
+			transition: 0.3s all ease;
+			color: $font-grey;
+			font-family: $font-bold !important;
+			padding-left: 20px;
+			max-width: 100% !important;
+			// background: $background-grey-light;
+			// background-color: blue;
+			height: 50px;
+			background: transparent;
+
+			&:focus ~ label {
+				opacity: 1;
+			}
+			&:focus {
+				// border: none;
+				border: 2px solid rgb(141, 141, 4);
+
+			}
+			&:hover {
+				border: 2px solid rgb(141, 141, 4);
+				// border: none;
+			}
+		}
+	}
+
+	.campobutton {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+
+		button {
+			font-family: $font-bold !important;
+			float: left;
+			width: 100%;
+			height: 50px;
+			border: none;
+			// background: $background-action-color;
+			background: linear-gradient(177deg, rgba(187,140,54,1) 0%, rgba(252,228,76,1) 100%);
+			// color: $font-light;
+			color: rgb(63, 63, 63);
+			font-size: $defaultFontSize;
+			text-transform: uppercase;
+			border-radius: 5px;
+			letter-spacing: 1px;
+		}
+	}
+
+	.enlace {
+		float: left;
+		width: 100%;
+		color: $font-title;
+		font-family: $font-regular;
+		font-size: $defaultFontSize;
+		text-align: center;
+		margin-top: 20px;
+		text-decoration: underline;
+	}
+}

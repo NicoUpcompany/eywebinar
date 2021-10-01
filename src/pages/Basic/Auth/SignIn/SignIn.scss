@@ -1,0 +1,138 @@
+@import "../../../../scss/index.scss";
+
+.fondo {
+	float: left;
+	width: 100%;
+
+	.contenedorRegistro {
+		float: left;
+		width: 100%;
+		position: relative;
+		background: $background-color;
+		background-image: url('../../../../assets/img/fondoEY.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 100vh;
+		height: auto;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+
+		.seguro {
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.oscuro {
+			float: left;
+			width: 100%;
+			padding: 50px 20px;
+			background: $background-grey;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.row {
+			float: left;
+			width: 100%;
+			max-width: 580px;
+			background-color: transparent;
+
+			.form {
+				float: left;
+				width: 100%;
+				height: 555px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				flex-direction: column;
+				background-image: url(../../../../assets/img/login.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+
+				.titulo {
+					width: calc(100%);
+					max-width: 700px;
+					margin-bottom: 50px;
+				}
+				span {
+					color: $font-title;
+					margin: 0px 0px 0px;
+					font-family: $font-regular;
+					font-size: $defaultFontSize;
+				}
+
+				h1 {
+					color: $font-title;
+					margin: 20px 0px 0px;
+					font-size: $title-font-size;
+					font-family: $font-bold;
+				}
+
+				.login {
+					color: $font-title;
+					margin: 0px !important;
+					font-size: $defaultFontSize;
+					font-family: $font-regular;
+					float: left;
+					width: 80%;
+					text-align: center;
+					letter-spacing: 1px;
+					margin-bottom: 20px !important;
+				}
+
+				.cronometro {
+					width: 100%;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					margin: 0px 0px 40px;
+
+					div {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+
+						h1 {
+							color: $font-chrono !important;
+							margin: 0px;
+						}
+
+						span {
+							color: $font-chrono !important;
+							margin: 0px;
+						}
+					}
+				}
+
+				.card {
+					// background: $background-light;
+					background-color: transparent;
+					padding: 40px;
+					width: 75%;
+					margin-bottom: 30px;
+					// border: 1px solid $border-grey-light;
+					// border-radius: 20px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 790px) {
+	.fondo {
+		.contenedorRegistro {
+			padding: 0px 0px 50px !important;
+
+			.row {
+				padding: 0px 20px;
+			}
+		}
+	}
+}

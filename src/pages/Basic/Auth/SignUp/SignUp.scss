@@ -1,0 +1,118 @@
+@import "../../../../scss/variables";
+
+.row {
+	float: left;
+	width: 100%;
+	display: flex;
+	background-color: $background-color;
+
+	.col3 {
+		float: left;
+		min-height: 100vh;
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-direction: column;
+
+		.fondoMovil {
+			height: 100vh;
+		}
+	}
+
+	.col4 {
+		float: left;
+		width: 100%;
+		padding: 50px;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		background-color: $background-color;
+		max-width: 800px;
+		margin: 0 auto;
+
+		h2 {
+			text-align: left;
+			font-size: $title-font-size;
+			line-height: 17px;
+			letter-spacing: -0.1rem;
+			width: 100%;
+			max-width: 1000px;
+			font-family: $font-bold;
+			color: $font-dark;
+		}
+
+		p {
+			font-size: $subtitle-font-size;
+			color: $font-subtitle;
+			width: 100%;
+			font-family: $font-bold;
+			margin-bottom: 10px;
+			max-width: 1000px;
+		}
+
+		a {
+			float: left;
+			width: 100%;
+			max-width: 1000px;
+			margin: 20px auto 0;
+			text-align: center;
+		}
+
+		
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 790px) {
+	.fondo {
+		.row {
+			flex-direction: column;
+
+			.col3 {
+				float: left;
+				width: 100%;
+				height: auto;
+				min-height: auto;
+				position: relative;
+
+				.fondoMovil {
+					display: block;
+					float: left;
+					height: auto;
+					width: 100%;
+				}
+			}
+
+			.col4 {
+				float: left;
+				width: 100%;
+				padding: 20px;
+				flex-direction: column;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: auto;
+
+				h2 {
+					text-align: left;
+					line-height: 17px;
+					letter-spacing: -0.02em;
+					width: 100%;
+					max-width: 1000px;
+				}
+
+				p {
+					width: 100%;
+					max-width: 1000px;
+				}
+
+				a {
+					width: 100%;
+					max-width: 1000px;
+				}
+			}
+		}
+	}
+}

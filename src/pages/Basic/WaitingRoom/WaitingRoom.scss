@@ -1,0 +1,419 @@
+@import "../../../scss/variables";
+
+.pregunta2 {
+	float: left;
+	width: 100%;
+	left: 0 !important;
+	height: 120px;
+	position: relative;
+	padding: 0px 20px;
+
+	.card {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 5px;
+		width: 100%;
+		max-width: 1280px;
+		height: 100px;
+		border-radius: 100px;
+		padding: 0px 20px;
+
+		.barra {
+			float: left;
+			width: 100%;
+			background-color: $background-light;
+			border-radius: 5px;
+			height: 90px;
+			padding: 0px 50px;
+			position: relative;
+			-webkit-box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.75);
+			transition-duration: 1s all;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			h3 {
+				font-size: $confirm-title-font-size;
+				margin: 0px;
+				float: left;
+				width: 40%;
+				line-height: 90px;
+				color: $font-title;
+				cursor: pointer;
+				font-family: $font-bold;
+			}
+
+			.message {
+				height: 90px;
+				float: left;
+				display: flex;
+				align-items: center;
+				position: relative;
+
+				.message-container {
+					width: 56px;
+					height: 56px;
+					border-radius: 100px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-left: 10px;
+					cursor: pointer;
+					background-color: $background-action-color;
+
+					.mensaje {
+						color: $font-light;
+					}
+				}
+
+				.noti {
+					width: 20px;
+					height: 20px;
+					border-radius: 100px;
+					background: $notification;
+					position: absolute;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					top: 15px;
+					left: 35px;
+					color: $font-light;
+				}
+
+				.volumen {
+					width: 56px;
+					height: 56px;
+					border-radius: 100px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-left: 10px;
+					cursor: pointer;
+					background-color: $background-action-color;
+
+					.icon {
+						color: $font-light;
+					}
+				}
+			}
+		}
+	}
+}
+
+.fondo {
+	position: relative;
+	display: block;
+	background-color: $background-color;
+
+	.menu {
+		float: left;
+		width: 100%;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0px 50px;
+		background: $background-light;
+
+		.logo {
+			img {
+				width: 100px;
+			}
+		}
+
+		.subMenu {
+			a {
+				color: $font-menu-link;
+				font-size: $subtitle-font-size;
+				font-family: $font-bold;
+				margin-left: 50px;
+
+				&:hover {
+					color: $font-menu-link-hover;
+				}
+			}
+
+			.perfil {
+				background: #2F92EC;
+				color: #fff;
+				width: 120px;
+				padding: 10px 20px;
+				height: 40px;
+				border: 2px solid transparent;
+				border-radius: 8px;
+				transition: all 0.3s ease-in;
+
+				&:hover {
+					background: transparent;
+					color: #2F92EC;
+					border: 2px solid #2F92EC;
+				}
+			}
+		}
+	}
+
+	.header2 {
+		float: left;
+		width: 100%;
+		min-height: 100px;
+		background-color: $background-grey;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		margin-bottom: 50px;
+
+		.centrado {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			margin: 10px auto;
+
+			.cronometro {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin: 20px 0px 20px;
+				max-width: 450px;
+
+				div {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+
+					h1 {
+						color: $font-light !important;
+						font-size: $title-font-size;
+						font-family: $font-bold;
+						margin: 0px;
+					}
+
+					span {
+						color: $font-light !important;
+						font-size: $subtitle-font-size;
+						font-family: $font-regular;
+						margin: 0px;
+					}
+				}
+			}
+			.btn {
+				margin-top: 30px;
+				button {
+					cursor: pointer;
+					float: left;
+					width: 100%;
+					background: #05afbc;
+					border: none;
+					width: 300px;
+					height: 48px;
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					font-size: 18px;
+					font-weight: 700;
+					text-transform: uppercase;
+					color: white;
+				}
+			}
+		}
+	}
+
+	.contenedor {
+		position: relative;
+		max-width: 1280px;
+		display: block;
+		margin: 0 auto;
+		clear: both;
+
+		.title {
+			font-family: $font-bold;
+			font-size: $title-font-size;
+			color: $font-title;
+			padding-left: 10px;
+		}
+
+		.stands {
+			float: left;
+			width: 100%;
+			position: relative;
+			display: block;
+			max-width: 1280px;
+
+			&:last-child {
+				margin-bottom: 50px;
+			}
+
+			.col-2 {
+				position: relative;
+				float: left;
+				width: 50%;
+				box-sizing: border-box;
+				padding: 10px;
+				cursor: pointer;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.col-4 {
+				position: relative;
+				float: left;
+				width: 50%;
+				box-sizing: border-box;
+				cursor: pointer;
+				height: 580px;
+			}
+
+			.col-3 {
+				position: relative;
+				float: left;
+				width: calc(100% / 3);
+				box-sizing: border-box;
+				padding: 10px;
+				cursor: pointer;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.async {
+		position: relative;
+		display: table;
+		width: 100%;
+
+		.async-container {
+			position: relative;
+			display: block;
+			width: 100%;
+			max-width: 1280px;
+			margin: 50px auto;
+			padding: 0 20px;
+
+			.data {
+				position: relative;
+				display: block;
+				background-color: $background-light;
+				padding: 20px 50px 20px 120px;
+				border-radius: 5px;
+				background-image: url("../../../assets/images/async-logo.png");
+				background-repeat: no-repeat;
+				background-position-x: 20px;
+				background-position-y: 20px;
+				background-size: 80px;
+
+				.async-title {
+					font-family: $font-bold;
+					font-size: $subtitle-font-size;
+					color: $font-title;
+				}
+
+				.async-description {
+					font-family: $font-regular;
+					font-size: $day-font-size;
+					color: $font-default;
+					max-width: 560px;
+				}
+
+				.icons-container {
+					position: relative;
+					display: flex;
+					justify-content: space-between;
+					max-width: 300px;
+
+					.date {
+						font-family: $font-bold;
+						font-size: $day-font-size;
+						color: $font-title;
+						display: flex;
+						align-items: center;
+
+						.icon {
+							margin-right: 10px;
+						}
+					}
+				}
+
+				.async-button {
+					position: absolute;
+					right: 50px;
+					bottom: 30px;
+					border: 2px solid $border-color;
+					background-color: $background-light;
+					color: $font-subtitle;
+					font-family: $font-bold;
+					text-transform: uppercase;
+					padding: 8px 50px;
+					border-radius: 5px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 719px) {
+	.fondo {
+		.header .menu {
+			padding: 0px 20px;
+		}
+		.contenedor .stands2 {
+			.col {
+				display: block;
+				img:first-child {
+					width: 50%;
+				}
+				.less-width {
+					width: 40% !important;
+				}
+			}
+			.col-3 {
+				width: 50% !important;
+				margin-right: 0px;
+				display: block;
+				&:nth-child(3n) {
+					margin-right: 0px !important;
+				}
+				&:nth-child(2n) {
+					margin-right: 0px !important;
+				}
+				img:first-child {
+					width: 45%;
+				}
+				.less-width {
+					width: 20% !important;
+				}
+			}
+			.col-2 {
+				width: 50% !important;
+				margin-right: 0px;
+				display: block;
+				&:nth-child(3n) {
+					margin-right: 0px !important;
+				}
+				&:nth-child(2n) {
+					margin-right: 0px !important;
+				}
+				img:first-child {
+					width: 45%;
+				}
+				.less-width {
+					width: 35% !important;
+				}
+			}
+		}
+	}
+}

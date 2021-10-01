@@ -1,0 +1,165 @@
+@import "../../../scss/variables";
+.col4 {
+	form {
+		margin: 0 auto;
+		float: left;
+		width: 100%;
+		max-width: 800px;
+
+		.campo {
+			float: left;
+			width: 100%;
+
+			.mitad {
+				float: left;
+				margin-left: 20px;
+				width: calc(50% - 10px);
+				margin-bottom: 20px;
+				position: relative;
+
+				&:hover label {
+					opacity: 1;
+				}
+
+				label {
+					text-transform: uppercase;
+					font-family: $font-bold !important;
+					position: absolute;
+					transition: 0.3s all ease;
+					top: -10px;
+					left: 7px;
+					font-size: 12px;
+					padding: 2px 4px;
+					background: transparent;
+					color: $font-grey !important;
+					opacity: 0;
+				}
+
+				.more-info {
+					width: 100%;
+					color: $font-default;
+					font-size: $defaultFontSize;
+					font-family: $font-semi-bold;
+					height: 50px;
+					line-height: 50px;
+
+					a {
+						margin: 0;
+						width: auto;
+						float: none;
+					}
+				}
+			}
+
+			input {
+				float: left;
+				width: 100%;
+				transition: 0.3s all ease;
+				color: $font-grey;
+				padding-left: 20px;
+				max-width: 100% !important;
+				background: $background-grey-light;
+				height: 50px;
+				border: 1px solid $border-grey-light;
+				font-family: $font-semi-bold;
+
+				&:focus ~ label {
+					opacity: 1;
+				}
+
+				&:focus {
+					border: 1px solid $border-grey-light;
+				}
+
+				&:hover {
+					border: 1px solid $border-grey-light;
+				}
+			}
+
+			.mitad:first-child {
+				margin-left: 0px;
+			}
+
+			.btn {
+				float: right;
+				width: auto;
+				background: $background-action-color;
+				font-size: $defaultFontSize;
+				font-family: $font-bold;
+				height: 55px;
+				border-radius: 5px !important;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-transform: uppercase;
+				cursor: pointer;
+				border-radius: 8px;
+				padding: 0 50px;
+
+				p {
+					margin: 0px;
+					color: $font-light;
+					font-family: $font-bold !important;
+					font-size: $defaultFontSize !important;
+				}
+			}
+
+			.ant-select,
+			.ant-select-selector {
+				color: $font-grey !important;
+				background: $background-grey-light !important;
+			}
+
+			.ant-select-arrow {
+				color: $background-action-color;
+			}
+
+			.ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+				height: 48px;
+			}
+
+			.ant-select-single .ant-select-selector .ant-select-selection-item,
+			.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+				padding: 9px !important;
+				color: $font-grey;
+				background: $background-grey-light !important;
+			}
+
+			.ant-select-selection-placeholder {
+				color: $font-grey;
+				background: $background-grey-light;
+				font-family: $font-semi-bold;
+			}
+
+			.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+				border: 1px solid $border-grey-light !important;
+				box-shadow: 0 0 0 2px $border-grey-light !important;
+				background: $background-grey-light;
+			}
+			.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+				border: 1px solid $border-grey-light !important;
+				box-shadow: 0 0 0 2px $border-grey-light !important;
+				background: $background-grey-light;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 790px) {
+	.col4 {
+		form {
+			.campo {
+				.mitad {
+					float: left;
+					margin-left: 0px;
+					width: calc(100%);
+					margin-bottom: 20px;
+
+					&:first-child {
+						margin-left: 0px;
+					}
+				}
+			}
+		}
+	}
+}
