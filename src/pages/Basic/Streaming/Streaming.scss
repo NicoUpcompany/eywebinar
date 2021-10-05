@@ -453,7 +453,12 @@
 			width: 100%;
 			position: relative;
 			display: block;
-			// border: 1px solid $border-grey-light;
+			
+			img.base{
+				position: absolute;
+				right: -80px;
+				top: 70%;
+			}
 
 			.transmission{
 				width: 100%;
@@ -483,7 +488,6 @@
 					align-items: center;
 					justify-content: space-between;
 					padding: 0;
-
 					img {
 						cursor: pointer;
 						width: 60px;
@@ -531,11 +535,6 @@
 						width: 60px;
 					}
 				}
-
-			// .social {
-			// 	width: calc(100% - 350px);
-			// 	display: flex;
-			// 	justify-content: flex-start;}
 			}
 
 			.base {
