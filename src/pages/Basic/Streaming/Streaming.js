@@ -103,15 +103,15 @@ const Streaming = () => {
 					const GUID = "chat_general";
 					const password = "";
 					const groupType = CometChat.GROUP_TYPE.PUBLIC;
-					CometChat.joinGroup(GUID, groupType, password).then(
-						(group) => {},
+					CometChat.login(UID, apiKey).then(
+						(User) => {
+							CometChat.joinGroup(GUID, groupType, password).then(
+								(group) => {},
+								(error) => {}
+							);
+						},
 						(error) => {}
 					);
-					// CometChat.login(UID, apiKey).then(
-					//     User => {
-					//     },
-					//     error => {}
-					// );
 					Socket.on("DO_CLAPS", () => {
 						crearAnimationSocket();
 					});
@@ -447,7 +447,7 @@ const Streaming = () => {
 								width="560"
 								height="315"
 								className="transmission"
-								src="https://player.vimeo.com/video/496943592"
+								src="https://vimeo.com/event/1356225/embed"
 								frameBorder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 								allowFullScreen
