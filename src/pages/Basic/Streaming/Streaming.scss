@@ -1404,6 +1404,8 @@
 			
 			.col1 {
 				min-height: auto;
+				width: 100%;
+
 				.opciones {
 					.movil {
 						display: flex !important;
@@ -1439,11 +1441,10 @@
 			}
 
 			.col2 {
-				
 				float: left;
 				width: 100% !important;
 				height: calc(100vh - 80px);
-				display: block !important;
+				display: none;
 			}
 		}
 	}

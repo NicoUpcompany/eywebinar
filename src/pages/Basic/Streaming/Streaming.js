@@ -95,8 +95,7 @@ const Streaming = () => {
 
 				setTimeout(() => {
 					$(".css-1z10v04").trigger('click');
-					$(".css-1arksw8").trigger('click');
-				}, 1500);
+				}, 1000);
 
 				if (!isSafari && !isMobileSafari) {
 					const UID = decodedToken.id;
