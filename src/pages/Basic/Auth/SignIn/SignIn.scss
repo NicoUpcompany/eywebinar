@@ -132,6 +132,14 @@
 
 			.row {
 				padding: 0px 20px;
+
+				.form{
+					height: 525px;
+
+					.card{
+						padding: 0;
+					}
+				}
 			}
 		}
 	}

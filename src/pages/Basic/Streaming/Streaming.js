@@ -15,7 +15,7 @@ import VolumeUpIcon from "@material-ui/icons/VolumeUp";
 
 import cerrar from "../../../assets/images/cerrar.svg";
 import audio from "../../../assets/audio/audio.mp3";
-import logo from "../../../assets/images/logo-wtng-rm.png";
+import logo from "../../../assets/img/logoey.png";
 import aplausos from "../../../assets/images/clap2.png";
 import face1 from "../../../assets/images/smile2.png";
 import face2 from "../../../assets/images/face2.png";
@@ -94,8 +94,9 @@ const Streaming = () => {
 				console.log('holasdf')
 
 				setTimeout(() => {
-					$(".css-1z10v04:first-child").trigger('click');
-				}, 1000);
+					$(".css-1z10v04").trigger('click');
+					$(".css-1arksw8").trigger('click');
+				}, 1500);
 
 				if (!isSafari && !isMobileSafari) {
 					const UID = decodedToken.id;
@@ -415,7 +416,9 @@ const Streaming = () => {
 				<div className="contenedorStreaming">
 					<div className="col1" id="col1">
 						<div className="header">
-							<div className="logo"></div>
+							<div className="logo">
+								<img src={logo} alt="logo" width="60" />
+							</div>
 							{/* {state3 ? (
 								<div className="opciones">
 									<div onClick={() => OnOffNotifications()}>
